@@ -31,8 +31,10 @@ panc8_small <- RunBBKNN(panc8_small, batch_key = "tech")
 ```
 
 ## Release
-### 1.1.1
-* Compatibility with tidytable 0.11.0
+### 2.0.0
+* Remove `reticulate` dependency. Now use kNN algorithms provided by `RcppAnnoy` and `rnndescent`
+* Add `return.umap.model` for `RunBBKNN.Seurat`
+* Improvements for `testthat`
 
 ### 1.1.0
 * Compatibility with Seurat v5

@@ -15,7 +15,7 @@ data("panc8_small")
 panc8_small <- RunBBKNN(panc8_small, batch_key = "tech")
 
 ## ----clustering---------------------------------------------------------------
-panc8_small <- FindClusters(panc8_small, graph.name = "bbknn")
+panc8_small <- FindClusters(panc8_small, graph.name = "RNA_bbknn")
 
 ## ----umap, fig.width=5, fig.height=10-----------------------------------------
 p1 <- DimPlot(panc8_small, reduction = "umap", group.by = "celltype", label = TRUE,
